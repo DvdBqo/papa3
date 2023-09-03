@@ -1,5 +1,5 @@
 ### General
-baseURL = 'https://www.example.com/' # Enter your full production URL
+baseURL = 'https://master--incredible-lily-6f3863.netlify.app/' # Enter your full production URL
 languageCode = 'en-us' # Default
 timeZone = 'America/New_York' # IANA timezone https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 title = 'Literary Bytes' # Site title used throughout site
