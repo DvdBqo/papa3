@@ -1,9 +1,44 @@
 [[main]]
     # Top-level menu entry
+    identifier = ""
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[main]]
+    identifier = "about"
+    name = "About me"
+    url = "/about/"
+    weight = 2
+
+[[main]]
+    # Top-level menu entry
+    identifier = "writing"
+    name = "Blog"
+    url = "/posts/"
+    weight = 3
+
+[[main]]
+    identifier = "posts"
+    name = "All Posts"
+    url = "/posts/"
+    parent = "writing"
+    weight = 1
+
+[[main]]
+    identifier = "subsection"
+    name = "Subsection"
+    url = "/subsection/"
+    # url = "/posts/subsection/" # Remove url param from subsection/_index.md frontmatter to use full permalink
+    parent = "writing"
+    weight = 2
+
+[[main]]
+    # Top-level menu entry
     identifier = "work"
     name = "Work"
     url = "/projects/"
-    weight = 1
+    weight = 4
 
 [[main]]
     identifier = "projects"
@@ -13,78 +48,50 @@
     weight = 1
 
 [[main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
+    identifier = "project-type"
+    name = "Project Types"
+    url = "/project-types/"
     parent = "work"
     weight = 2
+[[main]]
+    # Top-level menu entry
+    identifier = "subsection2"
+    name = "Resource"
+    url = "/subsection2/"
+    weight = 5
 
 [[main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    parent = "work"
-    weight = 3
-
-[[main]]
-    # Top-level menu entry
-    identifier = "writing"
-    name = "Writing"
-    url = "/posts/"
-    weight = 4
-
-[[main]]
-    identifier = "posts"
-    name = "All Posts"
-    url = "/posts/"
-    parent = "writing"
-    weight = 4
-
-[[main]]
-    identifier = "subsection"
-    name = "Subsection"
-    url = "/subsection/"
-    # url = "/posts/subsection/" # Remove url param from subsection/_index.md frontmatter to use full permalink
-    parent = "writing"
-    weight = 5
+    weight = 6
 
 [[main]]
     # Top-level menu entry
     identifier = "explore"
     name = "Explore"
     url = "/categories/"
-    weight = 6
+    weight = 7
 
 [[main]]
     identifier = "categories"
     name = "Categories"
     url = "/categories/"
     parent = "explore"
-    weight = 6
+    weight = 7
 
 [[main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
     parent = "explore"
-    weight = 7
+    weight = 1
 
 [[main]]
     identifier = "series"
     name = "Series"
     url = "/series/"
     parent = "explore"
-    weight = 8
+    weight = 7
 
-[[main]]
-    identifier = "project-type"
-    name = "Project Types"
-    url = "/project-types/"
-    parent = "explore"
-    weight = 9
-[[main]]
-    # Top-level menu entry
-    identifier = "recursos"
-    name = "recursos"
-    url = "/projects/"
-    weight = 4
+
